@@ -1,7 +1,7 @@
 apiVersion: networking.k8s.io/v1
 kind: Ingress
 metadata:
-  name: example-ingress
+  name: example-ingress-trk
   annotations:
     ingress.kubernetes.io/rewrite-target: /
     kubernetes.io/ingress.class: "traefik"
@@ -11,14 +11,14 @@ spec:
   rules:
   - http:
       paths:
-        - path: /apple
+        - path: /tr-apple
           pathType: Prefix
           backend:
             service:
               name: apple-service
               port:
                 number: 5678
-        - path: /banana
+        - path: /tr-banana
           pathType: Prefix
           backend:
             service:
