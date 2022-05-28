@@ -4,6 +4,9 @@ metadata:
   name: example-ingress
   annotations:
     ingress.kubernetes.io/rewrite-target: /
+    kubernetes.io/ingress.class: "traefik"
+    traefik.frontend.passHostHeader: "true"
+    traefik.backend.loadbalancer.sticky: "false"
 spec:
   rules:
   - http:
