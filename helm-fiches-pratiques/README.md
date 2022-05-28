@@ -1,6 +1,6 @@
 # Helm katas
 
-A set of Helm exercises actively used by [Eficode Academy](https://www.eficode.com/academy)
+A set of Helm exercises 
 
 ## Overview of exercises
 
