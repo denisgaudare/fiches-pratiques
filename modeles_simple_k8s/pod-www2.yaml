@@ -1,0 +1,20 @@
+apiVersion: v1
+kind: Pod
+metadata: 
+  name: 
+  labels: 
+    name: 
+spec: 
+  containers: 
+  - name: 
+    image: 
+    ports: 
+      - containerPort: 
+        name: 
+    volumeMounts: 
+      - name: 
+        mountPath: 
+  volumes: 
+    - name: 
+      persistentVolumeClaim: 
+        claimName: 

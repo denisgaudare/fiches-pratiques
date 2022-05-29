@@ -1,0 +1,66 @@
+apiVersion: v1
+kind: Namespace
+metadata: 
+  name: 
+---
+: 
+apiVersion: v1
+kind: ServiceAccount
+metadata: 
+  name: 
+  namespace: 
+---
+: 
+apiVersion: rbac.authorization.k8s.io/v1beta1
+kind: ClusterRoleBinding
+metadata: 
+  name: 
+roleRef: 
+  apiGroup: 
+  kind: ClusterRole
+  name: 
+subjects: 
+- kind: ServiceAccount
+  name: 
+  namespace: 
+---
+: 
+apiVersion: v1
+kind: Service
+metadata: 
+  name: 
+  namespace: 
+spec: 
+  type: 
+  selector: 
+    app: 
+  ports: 
+    - name: 
+      protocol: 
+      port: 
+      targetPort: 
+      nodePort: 
+---
+: 
+apiVersion: apps/v1
+kind: Deployment
+metadata: 
+  name: 
+  namespace: 
+spec: 
+  selector: 
+    matchLabels: 
+      app: 
+  template: 
+    metadata: 
+      labels: 
+        app: 
+    spec: 
+      serviceAccountName: 
+      containers: 
+      - name: 
+        image: 
+        imagePullPolicy: 
+        ports: 
+        - containerPort: 
+          protocol: 

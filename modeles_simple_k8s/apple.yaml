@@ -1,0 +1,28 @@
+kind: Pod
+apiVersion: v1
+metadata: 
+  name: 
+  labels: 
+    app: 
+spec: 
+  containers: 
+    - name: 
+      image: 
+      args: 
+        - "-text=apple"
+: 
+
+: 
+---
+: 
+
+: 
+kind: Service
+apiVersion: v1
+metadata: 
+  name: 
+spec: 
+  selector: 
+    app: 
+  ports: 
+    - port: 

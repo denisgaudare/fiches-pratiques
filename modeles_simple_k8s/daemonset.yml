@@ -1,0 +1,20 @@
+apiVersion: extensions/v1beta1
+kind: DaemonSet
+metadata: 
+  name: 
+spec: 
+  selector: 
+    matchLabels: 
+      tier: 
+      name: 
+  template: 
+    metadata: 
+      labels: 
+        tier: 
+        name: 
+    spec: 
+      containers: 
+      - name: 
+        image: 
+        ports: 
+        - containerPort: 

@@ -1,0 +1,26 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata: 
+  name: 
+spec: 
+  replicas: 
+  selector: 
+    matchLabels: 
+      service: 
+  strategy: 
+    type: 
+    rollingUpdate: 
+      maxSurge: 
+      maxUnavailable: 
+  minReadySeconds: 
+  template: 
+    metadata: 
+      labels: 
+        service: 
+    spec: 
+      containers: 
+      - name: 
+        image: 
+        imagePullPolicy: 
+        ports: 
+        - containerPort: 
